@@ -2,14 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Footer } from "@/components/site/Footer";
-import retirement from "@/assets/retirement.jpg.asset.json";
-import research from "@/assets/research.jpg.asset.json";
-import news from "@/assets/news.jpg.asset.json";
-import band from "@/assets/band.png.asset.json";
-import art1 from "@/assets/art1.jpg.asset.json";
-import art2 from "@/assets/art2.jpg.asset.json";
-import art3 from "@/assets/art3.jpg.asset.json";
-import event from "@/assets/event.jpg.asset.json";
+import retirement from "@/assets/retirement.jpg";
+import research from "@/assets/research.jpg";
+import news from "@/assets/news.jpg";
+import band from "@/assets/band.png";
+import art1 from "@/assets/art1.jpg";
+import art2 from "@/assets/art2.jpg";
+import art3 from "@/assets/art3.jpg";
+import event from "@/assets/event.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,19 +38,19 @@ export const Route = createFileRoute("/")({
 
 const CARDS = [
   {
-    image: retirement.url,
+    image: retirement,
     kicker: "Individuals & Families",
     title: "Digital Retirement",
     copy: "Planning for retirement is a lifelong process. We build strategies designed to protect income and grow digital wealth across generations.",
   },
   {
-    image: research.url,
+    image: research,
     kicker: "Corporations & Institutions",
     title: "Digital Research",
     copy: "Independent equity, fixed income and digital asset research delivering the insight institutions need to move with conviction.",
   },
   {
-    image: news.url,
+    image: news,
     kicker: "About Us",
     title: "News & Media",
     copy: "Press releases, market strategy, analyst appearances and thought leadership from across the Blanch Network.",
@@ -59,19 +59,19 @@ const CARDS = [
 
 const ARTICLES = [
   {
-    image: art1.url,
+    image: art1,
     category: "Digital Asset Management",
     title: "Market Strategy",
     author: "Blanch & Co",
   },
   {
-    image: art2.url,
+    image: art2,
     category: "Digital Wealth Management",
     title: "Graduating into Digital Financial Independence",
     author: "Blanch & Co",
   },
   {
-    image: art3.url,
+    image: art3,
     category: "Digital Equities",
     title: "If You're Betting On A Rally, Bet On Tech",
     author: "Ari Wald",
@@ -179,7 +179,7 @@ function Index() {
         <section
           id="asset-management"
           className="relative flex h-56 items-center bg-primary-deep bg-cover bg-center"
-          style={{ backgroundImage: `url(${band.url})` }}
+          style={{ backgroundImage: `url(${band})` }}
         >
           <div className="absolute inset-0 bg-primary-deep/70" />
           <div className="container-page relative">
@@ -218,7 +218,7 @@ function Index() {
         <section
           id="institutions"
           className="relative flex h-80 items-center bg-cover bg-center"
-          style={{ backgroundImage: `url(${event.url})` }}
+          style={{ backgroundImage: `url(${event})` }}
         >
           <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
           <div className="container-page relative max-w-xl text-primary-foreground">

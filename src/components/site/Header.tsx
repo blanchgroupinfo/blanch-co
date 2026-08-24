@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Menu, X, Search, ChevronDown } from "lucide-react";
-import logo from "@/assets/blanch-logo.png.asset.json";
-import nav1 from "@/assets/retirement.jpg.asset.json";
-import nav2 from "@/assets/art3.jpg.asset.json";
-import nav3 from "@/assets/research.jpg.asset.json";
-import nav4 from "@/assets/news.jpg.asset.json";
+import logo from "@/assets/blanch-logo.png";
+import nav1 from "@/assets/retirement.jpg";
+import nav2 from "@/assets/art3.jpg";
+import nav3 from "@/assets/research.jpg";
+import nav4 from "@/assets/news.jpg";
 
 type MenuGroup = { title: string; links: string[] };
 type NavItem = {
@@ -42,7 +42,7 @@ const NAV: NavItem[] = [
       },
     ],
     feature: {
-      image: nav1.url,
+      image: nav1,
       title: "Find a Digital Financial Advisor",
       copy: "Our Digital Financial Advisors can advise you on all your Digital wealth management needs.",
       cta: "Search",
@@ -76,7 +76,7 @@ const NAV: NavItem[] = [
       },
     ],
     feature: {
-      image: nav2.url,
+      image: nav2,
       title: "Conferences & Events",
       copy: "Blanch & Co. hosts multiple conferences a year covering many different industries.",
       cta: "Learn More",
@@ -90,7 +90,7 @@ const NAV: NavItem[] = [
       { title: "For Financial Advisors", links: ["Products & Services", "Resources & Support"] },
     ],
     feature: {
-      image: nav3.url,
+      image: nav3,
       title: "Market Strategy",
       copy: "Discuss the week in review.",
       cta: "Read More",
@@ -111,7 +111,7 @@ const NAV: NavItem[] = [
       { title: "Global Offices", links: ["Asia", "Europe", "Middle East"] },
     ],
     feature: {
-      image: nav4.url,
+      image: nav4,
       title: "Contact Us",
       copy: "Have any questions? Click the link below to contact us directly.",
       cta: "Click Here",
@@ -145,7 +145,7 @@ export function Header() {
 
       <div className="container-page flex h-20 items-center justify-between gap-6">
         <a href="/" className="flex items-center">
-          <img src={logo.url} alt="Blanch & Co — Forever Forward" className="h-9 w-auto" />
+          <img src={logo} alt="Blanch & Co — Forever Forward" className="h-9 w-auto" />
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex" onMouseLeave={() => setOpen(null)}>

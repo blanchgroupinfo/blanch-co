@@ -1,25 +1,25 @@
 import { useEffect, useState } from "react";
-import hero1 from "@/assets/hero1.jpg.asset.json";
-import hero2 from "@/assets/hero2.jpg.asset.json";
-import hero3 from "@/assets/hero3.jpg.asset.json";
+import hero1 from "@/assets/hero1.jpg";
+import hero2 from "@/assets/hero2.jpg";
+import hero3 from "@/assets/hero3.jpg";
 
 const SLIDES = [
   {
-    image: hero1.url,
+    image: hero1,
     eyebrow: "Global Digital Financial Services",
     title: "Digital Private Bank & Sovereign Investment Trust",
     copy: "Blanch & Co is a leading global full Digital Financial Service, Digital Private Bank, and Sovereign Investment Trust, focused on providing trusted services and tailored, sophisticated solutions for individuals, families, corporations and institutions.",
     cta: "Learn More",
   },
   {
-    image: hero2.url,
+    image: hero2,
     eyebrow: "Blanch & Co.",
     title: "Who We Are",
     copy: "For more than 20 years we have met the financial professional expertise and insight thus forming Blanch & Co to clients — helping them achieve their goals. We provide a full range of wealth management, digital financial securities, Digital Private Banking and Digital Investment Trust services to individuals, families, corporate executives, global governments, businesses and institutions.",
     cta: "Learn More",
   },
   {
-    image: hero3.url,
+    image: hero3,
     eyebrow: "Digital Wealth Management",
     title: "Digital Insurance and Annuities",
     copy: "Protecting you and your family against life's uncertainties. Insurance plays an important role in helping you prepare for the unexpected. It should also be an important part of your overall financial planning goals and objectives.",

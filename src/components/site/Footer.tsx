@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Linkedin, Video } from "lucide-react";
-import logo from "@/assets/blanch-logo.png.asset.json";
+import logo from "@/assets/blanch-logo.png";
 
 const COLUMNS: { title: string; links: string[] }[] = [
   {
@@ -41,7 +41,7 @@ export function Footer() {
       <div className="container-page grid gap-10 py-16 md:grid-cols-2 lg:grid-cols-5">
         <div>
           <div className="inline-block bg-background px-4 py-3">
-            <img src={logo.url} alt="Blanch & Co" className="h-8 w-auto" />
+            <img src={logo} alt="Blanch & Co" className="h-8 w-auto" />
           </div>
           <div className="mt-6 flex gap-4 text-primary-foreground/70">
             <a href="#social" aria-label="Facebook" className="hover:text-gold">
