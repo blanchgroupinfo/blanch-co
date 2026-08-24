@@ -2,14 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Footer } from "@/components/site/Footer";
-import retirement from "@/assets/retirement.jpg.asset.json";
-import research from "@/assets/research.jpg.asset.json";
-import news from "@/assets/news.jpg.asset.json";
-import band from "@/assets/band.png.asset.json";
-import art1 from "@/assets/art1.jpg.asset.json";
-import art2 from "@/assets/art2.jpg.asset.json";
-import art3 from "@/assets/art3.jpg.asset.json";
-import event from "@/assets/event.jpg.asset.json";
+import retirement from "@/assets/retirement.jpg";
+import research from "@/assets/research.jpg";
+import news from "@/assets/news.jpg";
+import band from "@/assets/band.png";
+import art1 from "@/assets/art1.jpg";
+import art2 from "@/assets/art2.jpg";
+import art3 from "@/assets/art3.jpg";
+import event from "@/assets/event.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
